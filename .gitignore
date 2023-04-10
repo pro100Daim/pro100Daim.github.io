@@ -1,0 +1,13 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+sources
+
+# editors
+.vscode
+.idea
+
+# dev deps
+node_modules
