@@ -1,0 +1,72 @@
+.card {
+  position: relative;
+  
+  &-plus {
+    position: absolute;
+    width: 0;
+    height: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    @include transition(0.3s $ease-out-cubic);
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  figure {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+      @include transition(0.3s $ease-out-cubic);
+
+      @include media-breakpoint-up(lg) {
+        background-color: rgba($black, 0);
+      }
+    }
+
+    figcaption {
+      position: absolute;
+      top: initial;
+      left: 0;
+      bottom: 0;
+      width: auto;
+      height: auto;
+      font-weight: 600;
+      @include transition(0.3s $ease-out-cubic);      
+      z-index: 1;
+      
+      @include media-breakpoint-up(lg) {
+        transform: translateY(2rem);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &:hover {
+    figure {
+      &::after {
+        background-color: rgba($black, 0.7);
+      }
+
+      figcaption {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .card-plus {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+}

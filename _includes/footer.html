@@ -1,35 +1,18 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+<footer class="page-footer mt-auto py-4 py-lg-6">
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        &copy; {{ "now" | date: "%Y" }} {{ site.description | escape }}
       </div>
-
-      <div class="footer-col footer-col-2">
+      <div class="col-12 col-sm-6">
+      <div div class="d-flex">
+        <div class="page-footer-socials text-end my-auto ms-auto">
         {%- include social.html -%}
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
     </div>
-
   </div>
-
 </footer>
+<button class="btn btn-to-top" type="button" aria-describedby="To top button">
+  <i class="fas fa-chevron-up"></i>
+</button>
+<script src="{{ '/assets/js/app.js' | relative_url }}" type="text/javascript"></script>

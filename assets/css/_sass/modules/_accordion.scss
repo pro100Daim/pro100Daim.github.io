@@ -1,0 +1,74 @@
+.accordion {
+  position: relative;
+
+  &__tab {
+    border-bottom: $border-width solid $primary;
+
+    &:nth-of-type(n + 2) {
+      margin-top: $spacer * 3;
+    }
+  }
+
+  &__title {
+    padding-bottom: $spacer;
+  }
+
+  &__content {
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: $h6-font-size;
+    font-weight: $font-weight-light;
+
+    @include transition(0.3s $ease-out-cubic);
+
+    p:not(:last-child) {
+      margin-bottom: $spacer;
+    }
+
+    .is-active & {
+      margin-top: $spacer;
+    }
+  }
+
+  &__status-icon {
+    position: relative;
+    top: 0.25em;
+    display: inline-block;
+    width: $spacer;
+    height: $spacer;
+    margin-left: auto;
+    border-radius: 50%;
+    cursor: if($enable-button-pointers, pointer, null);
+
+    @include transition(background 0.3s $ease-out-cubic);
+
+    &:hover {
+      background: $gray-600;
+    }
+
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 1rem;
+      height: 2px;
+      background: $primary;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+
+      @include transition(transform 0.3s $ease-out-cubic);
+
+      .is-active & {
+        transform: rotate(0);
+      }
+    }
+  }
+}

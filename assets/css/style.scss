@@ -1,0 +1,14 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "main";
+
+{%- if jekyll.environment == 'development' -%}
+.debug {
+  border: $border-width solid $red;
+
+  & > * {
+    border: $border-width solid $red;
+  }
+}
+{%- endif -%}

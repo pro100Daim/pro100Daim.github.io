@@ -18,24 +18,51 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: JDM auto repair
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Write an awesome description for your new site here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+lang: uk
+extra_header_nav: 
+  - title: Home
+    url: "#sec-1"
+  - title: Services
+    url: "#sec-2"
+  - title: Contacts
+    url: "#sec-3" 
+contacts:
+  - icon: "fab fa-facebook-f"
+    link: https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/
+  - icon: "fab fa-instagram"
+    link: https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/
 
 # Build settings
-theme: minima
+theme: 
+  skin: classic
+  color: "#fff"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-node-module
 include:
   - _pages
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: false
+sass:
+  sass_dir: /assets/css/_sass
+  load_paths:
+    - ../node_modules/
+  style: compressed
+  sourcemap: never
+node_modules:
+  modules_dir: node_modules
+  assets:
+    js: assets/js
+    css: assets/css
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -44,21 +71,14 @@ include:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-liquid:
-  error_mode: strict
-  strict_filters: true
-  strict_variables: false
-sass:
-  sass_dir: "/assets/css/_sass"
-  style: compressed
-  sourcemap: never
 exclude:
+  - package*json
+  - node_modules
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/

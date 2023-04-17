@@ -1,0 +1,38 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  max-width: 110rem;
+  overflow-y: auto;
+  background-color: $body-bg;
+
+  @include media-breakpoint-up(lg) {
+    top: 50%;
+    height: auto;
+    transform: translateY(-50%);
+  }
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba($body-color, 0.6);
+    backdrop-filter: blur(20px);
+    z-index: $zindex-popover;
+
+    @include transition(0.3s $ease-out-cubic);
+
+    &.show-modal {
+      pointer-events: visible;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

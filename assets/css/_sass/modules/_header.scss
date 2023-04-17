@@ -1,0 +1,141 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  background-color: $white;
+  z-index: $zindex-fixed;
+  @include media-breakpoint-up(lg) {
+    transform: none;
+    background-color: transparent;
+  }
+
+  &.is-scroll {
+    background-color: $black;
+  }
+
+  &.is-open {
+    transform: translateY(0);
+    .page-header__nav {
+      visibility: visible;
+      height: calc(var(--vh, 1vh) * 100);
+      opacity: 1;
+      & + .page-header-socials {
+        visibility: visible;
+        opacity: 1;
+      }
+      @include media-breakpoint-up(lg) {
+        height: auto;
+      }
+    }
+  }
+
+  &-socials {
+    @include media-breakpoint-up(lg) {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &-brand {
+    display: inline-block;
+    width: 8rem;
+    height: 4.5rem;
+    img {
+      height: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 15rem;
+      height: 6rem;
+    }
+  }
+   &__nav {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: 0.3s $ease-out-cubic;
+    @include media-breakpoint-up(lg) {
+      visibility: visible;
+      height: auto;
+      opacity: 1;
+    }
+    & + .page-header-socials {
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s $ease-out-cubic;
+    }
+    &-item {
+      position: relative;
+      margin-bottom: 0;
+      a {
+        padding: $nav-link-padding-y $nav-link-padding-x * 0.5;
+        @include media-breakpoint-up(lg) {
+          color: $nav-link-color;
+          padding: $nav-link-padding-y $nav-link-padding-x;
+          @include fluid($vw-576, $vw-1200, $font-size-sm, $h6-font-size, $priority: true);
+        }
+      }
+      &:hover {
+        & > a {
+          color: var(--#{$variable-prefix}secondary);
+        }
+      }
+    }
+  }
+}
+
+.burger {
+  &-container {
+    width: 46px;
+    height: 36px;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    cursor: pointer;
+    &.is-animate {
+      .burger-bar {
+        background: transparent;
+        &::before,
+        &::after {
+          bottom: 0;
+          transform: rotate(-45deg);
+          transition: bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        &::after {
+          top: 0;
+          bottom: initial;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+  &-bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: $primary;
+    transition: all 0s 0.3s;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: $primary;
+    }
+    &::before {
+      bottom: 7px;
+      transition: bottom 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    &::after {
+      top: 7px;
+      transition: top 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  }
+}
