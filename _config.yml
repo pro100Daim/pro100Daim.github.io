@@ -45,7 +45,7 @@ theme:
   skin: classic
   color: "#fff"
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-seo-tag
   - jekyll-node-module
 include:

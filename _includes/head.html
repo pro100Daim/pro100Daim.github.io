@@ -19,8 +19,9 @@
   Example of custom node_modules
   <link rel="stylesheet" href="{{ 'bootstrap/dist/css/bootstrap.css' | node_module_url }}" /> 
   {%- endcomment -%}
+  
+  {%- comment -%} {%- feed_meta -%} {%- endcomment -%}
 
-  {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
