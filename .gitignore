@@ -9,4 +9,6 @@ sources
 .idea
 
 # dev deps
-node_modules
+.zip
+.tar[.gz]
+.rar
