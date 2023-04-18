@@ -1,0 +1,140 @@
+@import "~@splidejs/splide/src/css/core/index";
+
+.page-section {
+  .splide {
+    &__slide {
+      filter: drop-shadow(0 4px 4px rgba($primary, 0.25));
+    }
+
+    &-auto-height {
+      .splide__list {
+        align-items: flex-start;
+      }
+    }
+
+    &__track {
+      padding: $spacer 0;
+    }
+
+    &__arrows {
+      position: absolute;
+      top: calc(50% - 2.25rem);
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2rem;
+    }
+
+    &__arrow {
+      width: 4.5rem;
+      height: 4.5rem;
+      padding: 0;
+      border: map-get($border-widths, 2) solid $secondary;
+      border-radius: 50%;
+      background-color: rgba($blue, 0.5);
+      z-index: 1;
+
+      &:hover, &:focus {
+        border: map-get($border-widths, 2) solid $secondary;
+        background-color: rgba($blue, 0.8);
+      }
+
+      &--next {
+        transform: scaleX(-1);
+      }
+
+      svg {
+        position: relative;
+        fill: $white;
+
+        path {
+          transform: translate(30%, 30%);
+        }
+      }
+    }
+
+    &-big {
+      /* stylelint-disable-next-line selector-class-pattern */
+      .splide__arrow {
+        width: 7.4rem;
+        height: 7.4rem;
+        border: $border-width solid $primary;
+        background-color: transparent;
+
+        svg {
+          position: relative;
+          fill: $primary;
+
+          path {
+            transform: translate(30%, 40%);
+          }
+        }
+      }
+    }
+  }
+
+  &.certs {
+    .splide {
+      display: flex;
+      flex-wrap: wrap;
+
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+    /* stylelint-disable-next-line selector-class-pattern */
+    .splide__arrows {
+      position: relative;
+      top: 0;
+      justify-content: center;
+      order: 1;
+
+      @include media-breakpoint-up(md) {
+        position: absolute;
+        top: calc(50% - 3.7rem);
+        justify-content: space-between;
+      }
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    .splide__track {
+      order: 0;
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    .splide__arrow {
+      opacity: 1;
+      margin: $spacer;
+
+      @include transition(opacity 0.3s $ease-out-cubic);
+
+      @include media-breakpoint-up(md) {
+        margin: 0;
+      }
+    }
+  }
+
+  &.story {
+    .custom-splide-nav  {
+      position: relative;
+      top: 0;
+      display: block !important;
+      padding: 0 0 3rem;
+      justify-content: start;
+
+      button {
+        width: 5rem;
+        height: 5rem;
+        margin-right: $spacer * 1.5;
+
+        @include media-breakpoint-up(lg) {
+          width: 7.4rem;
+          height: 7.4rem;
+        }
+      }
+    }
+  }
+
+}

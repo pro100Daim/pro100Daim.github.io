@@ -31,12 +31,13 @@ extra_header_nav:
   - title: Services
     url: "#sec-2"
   - title: Contacts
-    url: "#sec-3" 
-contacts:
+    url: "#sec-5" 
+socials:
+# Icon search https://fontawesome.com/v5/search
   - icon: "fab fa-facebook-f"
-    link: https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/
+    link: https://www.facebook.com/
   - icon: "fab fa-instagram"
-    link: https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/
+    link: https://www.instagram.com/
 
 # Build settings
 theme: 

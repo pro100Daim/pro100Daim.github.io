@@ -1,0 +1,21 @@
+{%- assign fields = include.fields -%}
+<form class="form text-white" data-need-validate="1">
+  <div class="row gx-5 gy-4">
+    {%- for field in fields -%}
+      {%- if field.type == "textarea" -%}
+      <div class="col-12">
+        <textarea class="form-control ls-sm" rows="5" name="{{ field.entry }}" placeholder="{{ field.label }}"></textarea>
+        <small class="error-message text-secondary"></small>
+      </div>
+      {%- else -%}
+      <div class="col-6">
+        <input class="form-control ls-sm" type="{{ field.type }}" name="{{ field.entry }}" placeholder="{{ field.label }}" data-validate="require {{ field.type }}">
+        <small class="error-message text-secondary"></small>
+      </div>
+      {%- endif -%}
+    {%- endfor -%}
+    <div class="col-12">
+      <button class="btn btn-secondary" type="submit">{{ page.submit_text | default: "Submit" }}</button>
+    </div>
+  </div>
+</form>

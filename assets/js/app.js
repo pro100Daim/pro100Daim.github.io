@@ -1,41 +1,31 @@
 (function () {
   function App() {
+    // Check "new" word
     if (!new.target) {
       return new App();
     }
 
     this.options = {
-      header: document.querySelector(".page-header")
+      header: document.querySelector(".page-header"),
+      validations: {
+        autoTrim: true,
+        defaultBrowserValidation: false,
+        errorTextClassName: 'error-message',
+        //method is searching error block and return it
+        getErrorTextBlock: (field) => {
+          let element = field.nextElementSibling;
+          if (element && element.classList.contains('error-message')) {
+            return element;
+          }
+          return null;
+        }
+      }
     };
+
+    this.scrollTo = scrollTo;
+
     var _self = this;
     init();
-
-    function accordionMenus() {
-      var acc = document.querySelectorAll(".accordion__button");
-      var toggler = function(el) {
-        if (!el.classList.contains("is-active")) {
-          el.closest(".accordion").querySelectorAll(".accordion__button").forEach(function(btn) {
-            btn.classList.remove("is-active");
-            btn.nextElementSibling.style.maxHeight = null;
-          });
-        }
-        var panel = el.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      }
-      for (var i = 0; i < acc.length; i++) {
-        if (acc[i].classList.contains("is-active")) {
-          toggler(acc[i]);
-        }
-        acc[i].addEventListener("click", function() {
-          toggler(this);
-          this.classList.toggle("is-active");
-        });
-      }
-    }
 
     function scrollHeader() {
       const scrollTop = !!window.scrollY;
@@ -43,33 +33,43 @@
       else _self.options.header.classList.remove("is-scroll");
     }
 
-    function scrollToTop() {
-      const offsetTop = document.body.offsetTop;
-      document.querySelector(".btn-to-top").addEventListener("click", function() {
-        scroll({
-          top: offsetTop,
-          behavior: "smooth"
-        });
-      });
+    function showMenu(close = false) {
+      if (close || _self.options.header.querySelector(".burger-container").classList.contains("is-animate")) {
+        _self.options.header.classList.remove("is-open");
+        _self.options.header.querySelector(".burger-container").classList.remove("is-animate");
+      } else {
+        _self.options.header.classList.add("is-open");
+        _self.options.header.querySelector(".burger-container").classList.add("is-animate");
+      }
     }
 
-    function menuToggle() {
-      var nav = document.querySelector(".page-header__nav");
-      document.querySelector(".burger-container").addEventListener("click", function () {
-        nav.classList.toggle("is-animate");
+    function scrollTo(ev) {
+      showMenu(true);
+      const toEl = ev.currentTarget.getAttribute("href") || document.body;
+      scroll({
+        top: toEl.offsetTop - _self.options.header.offsetHeight,
+        behavior: "smooth"
       });
-      document.addEventListener("click", function(ev) {
-        if (!ev.target.closest(".page-header__nav")) {
-          nav.classList.remove("is-animate");
-        }
+    }
+    
+    function formValidations() {
+      _self.validation = new FormValidation(_self.options.validations);
+    }
+
+    function addEventListeners() {
+      document.querySelectorAll(".btn-to-top, a[href^=\'#sec\']").forEach(function(el) {
+        el.addEventListener('click', _self.scrollTo);  
+      })
+      document.querySelector('#nav-toggle')
+      .addEventListener('click', function() {
+        showMenu();
       });
     }
 
     function init() {
-      menuToggle();
+      addEventListeners();
       scrollHeader();
-      scrollToTop();
-      accordionMenus();
+      formValidations();      
       
       window.onscroll = function() {
         scrollHeader();
@@ -81,5 +81,5 @@
       }
     }
   }
-  new App();
-})();
+  window.APP = new App();
+})(window);

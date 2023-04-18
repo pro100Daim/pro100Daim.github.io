@@ -1,6 +1,5 @@
-<a class="fs-5 ms-5" href="#" target="_blank">
-  <i class="fab fa-facebook-f fa-fw"></i>
-</a>
-<a class="fs-5 ms-5" href="#" target="_blank">
-  <i class="fab fa-instagram fa-fw"></i>
-</a>
+{%- for social in site.socials -%}
+  <a class="fs-5 ms-5" href="{{ social.link }}" target="_blank">
+    <i class="{{ social.icon }} fa-fw"></i>
+  </a>
+{%- endfor -%}
