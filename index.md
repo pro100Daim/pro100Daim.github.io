@@ -53,22 +53,23 @@ section_3:
       caption: High quality, low cost car servicing
 section_4: 
   title: Contact us
+  action: https://docs.google.com/forms/d/e/1FAIpQLSdsKh7FmXcm47WIm67JGU6yq3ID_XJgLamN4HNWoqJ6m07trw/formResponse
   form: 
     - label: Name
       type: text
-      entry: entry.1746887209
+      entry: entry.2005620554
     - label: Lastname
       type: text
-      entry: entry.1746887209
+      entry: entry.1045781291
     - label: E-mail
       type: email
-      entry: entry.1746887209
+      entry: entry.1065046570
     - label: Phone
       type: tel
-      entry: entry.1746887209
+      entry: entry.1166974658
     - label: Message
       type: textarea
-      entry: entry.1746887209
+      entry: entry.839337160
 
 ---
 
@@ -106,12 +107,21 @@ section_4:
     <div class="row">
       <div class="col-12">
         <h2 class="h3 ls-sm">{{ page.section_1.title | default: "This is H2" | upcase }}</h2>
-        <a href="#" class="ls-sm"><u>{{ page.section_1.view_text | default: "View all" | upcase }}</u></a>
+        {%- if page.section_1.services.size > 3 -%}
+        <a href="#services" class="ls-sm" data-expand="#services-hidden">
+          <u>{{ page.section_1.view_text | default: "View all" | upcase }}</u>
+          ({{ page.section_1.services.size }})
+        </a>
+        {%- endif -%}
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-6">
+    <div id="services" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-6">
 
       {%- for service in page.section_1.services -%}
+      {%- if forloop.index == 4 -%}
+        <div id="services-hidden" class="col-12 w-100" aria-expanded="false">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">          
+      {%- endif -%}
       <div class="col">
         <a href="{{ service.title | default: '#' | upcase }}" class="card overflow-hidden">
           <figure class="position-relative img-fit ratio ratio-3x4 mb-4">
@@ -123,7 +133,11 @@ section_4:
           </figure>
           <h3 class="h4 ls-lg">{{ service.title | upcase }}</h3>
         </a>
-      </div>
+      </div>     
+      {%- if forloop.index == forloop.length and forloop.index > 3 -%}
+          </div>
+        </div>
+      {%- endif -%}
       {%- endfor -%}
 
     </div>
@@ -181,7 +195,7 @@ section_4:
         <h2 class="h3 text-white ls-sm mb-5">
          {{ page.section_4.title | default: "This is H2" | upcase }}
         </h2>
-        {%- include form.html fields = page.section_4.form -%}
+        {%- include form.html fields = page.section_4.form action=page.section_4.action -%}
       </div>
     </div>
   </div>

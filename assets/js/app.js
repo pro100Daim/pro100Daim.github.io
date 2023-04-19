@@ -22,8 +22,6 @@
       }
     };
 
-    this.scrollTo = scrollTo;
-
     var _self = this;
     init();
 
@@ -43,6 +41,17 @@
       }
     }
 
+    function expander(ev) {
+      const content = document.querySelector(ev.currentTarget.dataset.expand);
+      // const curHeight = content.clientHeight;
+      content.style.height = 'auto';
+      content.setAttribute('aria-expanded', true);
+      const autoHeight = content.clientHeight;
+      // with scroll height of scrolled element
+      content.style.height = autoHeight;
+      ev.currentTarget.remove();
+    }
+
     function scrollTo(ev) {
       showMenu(true);
       const toEl = ev.currentTarget.getAttribute("href") || document.body;
@@ -58,7 +67,10 @@
 
     function addEventListeners() {
       document.querySelectorAll(".btn-to-top, a[href^=\'#sec\']").forEach(function(el) {
-        el.addEventListener('click', _self.scrollTo);  
+        el.addEventListener('click', scrollTo);  
+      })
+      document.querySelectorAll("[data-expand]").forEach(function(el) {
+        el.addEventListener('click', expander);  
       })
       document.querySelector('#nav-toggle')
       .addEventListener('click', function() {

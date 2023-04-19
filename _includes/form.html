@@ -1,5 +1,6 @@
 {%- assign fields = include.fields -%}
-<form class="form text-white" data-need-validate="1">
+{%- assign action = include.action -%}
+<form class="form form-callback text-white" data-need-validate="1">
   <div class="row gx-5 gy-4">
     {%- for field in fields -%}
       {%- if field.type == "textarea" -%}
@@ -19,3 +20,41 @@
     </div>
   </div>
 </form>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    if (!window.hasOwnProperty('APP')) return;
+    APP.validation.settings.afterValidate = function(form) {
+      if (form.classList.contains('form-callback')) {
+        var formData = new FormData(form);
+        var xhr = new XMLHttpRequest();
+        var url = new URL("{{ action }}");
+
+        xhr.open('POST', url); 
+        xhr.send(formData);
+
+        xhr.onload = function() {
+          if (xhr.status != 200) {
+            // анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
+            console.log("Error " + xhr.status + ": " + xhr.statusText); // Например, 404: Not Found
+           
+          } else { 
+            // если всё прошло гладко, выводим результат
+            form.innerHTML += '<div class="row"><div class="col-12">Thanks</div></div>';
+            form.reset();
+          }
+        };
+        xhr.onprogress = function(event) {
+          if (event.lengthComputable) {
+            // console.log(`Получено ${event.loaded} из ${event.total} байт`);
+          } else {
+            // console.log(`Получено ${event.loaded} байт`); // если в ответе нет заголовка Content-Length
+          }
+        };
+        xhr.onerror = () => {
+          console.log('Submit failed');
+        };
+        return false;
+      }
+    };
+  });
+</script>

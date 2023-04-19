@@ -121,3 +121,7 @@ img {
 }
 
 // Custom
+[aria-expanded="false"] {
+  height: 0;
+  overflow: hidden;
+}
