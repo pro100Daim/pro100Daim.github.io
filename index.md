@@ -53,6 +53,7 @@ section_3:
       caption: High quality, low cost car servicing
 section_4: 
   title: Contact us
+  thank_text: Thanks for your request
   action: https://docs.google.com/forms/d/e/1FAIpQLSdsKh7FmXcm47WIm67JGU6yq3ID_XJgLamN4HNWoqJ6m07trw/formResponse
   form: 
     - label: Name
@@ -81,7 +82,7 @@ section_4:
     <div class="row h-100">
       <div class="col-12 my-auto">
         <h1 class="text-white mb-5">{{ page.h1 | default: "This is H1" | upcase  }}</h1>
-        <button class="btn btn-secondary text-white" type="button">{{ page.more_text | escape }}</button>
+        <a href="#sec-2" class="btn btn-secondary text-white">{{ page.more_text | escape }}</a>
       </div>
       <div class="col-12 mt-5 mt-lg-auto">
         <div class="cta row row-cols-1 row-cols-lg-3 mb-n5 mb-lg-0">
@@ -123,7 +124,7 @@ section_4:
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">          
       {%- endif -%}
       <div class="col">
-        <a href="{{ service.title | default: '#' | upcase }}" class="card overflow-hidden">
+        <a href="#sec-5" class="card overflow-hidden" data-message="{{ service.title | escape }}">
           <figure class="position-relative img-fit ratio ratio-3x4 mb-4">
             <img src="{{ service.image | relative_url }}" alt="Service">
             <figcaption class="h5 text-white ls-lg p-4 m-0">
@@ -195,7 +196,7 @@ section_4:
         <h2 class="h3 text-white ls-sm mb-5">
          {{ page.section_4.title | default: "This is H2" | upcase }}
         </h2>
-        {%- include form.html fields = page.section_4.form action=page.section_4.action -%}
+        {%- include form.html fields = page.section_4.form action=page.section_4.action message=page.section_4.thank_text -%}
       </div>
     </div>
   </div>

@@ -46,15 +46,22 @@
       // const curHeight = content.clientHeight;
       content.style.height = 'auto';
       content.setAttribute('aria-expanded', true);
-      const autoHeight = content.clientHeight;
+      var autoHeight = content.clientHeight;
       // with scroll height of scrolled element
       content.style.height = autoHeight;
       ev.currentTarget.remove();
     }
 
+    function setMessage(ev) {
+      var target = document.getElementById('message');
+      var message = ev.currentTarget.dataset.message;
+
+      target.value = message;
+    }
+
     function scrollTo(ev) {
       showMenu(true);
-      const toEl = ev.currentTarget.getAttribute("href") || document.body;
+      var toEl = ev.currentTarget.getAttribute("href") || document.body;
       scroll({
         top: toEl.offsetTop - _self.options.header.offsetHeight,
         behavior: "smooth"
@@ -70,7 +77,10 @@
         el.addEventListener('click', scrollTo);  
       })
       document.querySelectorAll("[data-expand]").forEach(function(el) {
-        el.addEventListener('click', expander);  
+        el.addEventListener('click', expander);
+      })
+      document.querySelectorAll("[data-message]").forEach(function(el) {
+        el.addEventListener('click', setMessage);
       })
       document.querySelector('#nav-toggle')
       .addEventListener('click', function() {

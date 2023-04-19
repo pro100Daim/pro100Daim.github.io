@@ -1,11 +1,12 @@
 {%- assign fields = include.fields -%}
 {%- assign action = include.action -%}
+{%- assign message = include.message -%}
 <form class="form form-callback text-white" data-need-validate="1">
   <div class="row gx-5 gy-4">
     {%- for field in fields -%}
       {%- if field.type == "textarea" -%}
       <div class="col-12">
-        <textarea class="form-control ls-sm" rows="5" name="{{ field.entry }}" placeholder="{{ field.label }}"></textarea>
+        <textarea id="message" class="form-control ls-sm" rows="5" name="{{ field.entry }}" placeholder="{{ field.label }}"></textarea>
         <small class="error-message text-secondary"></small>
       </div>
       {%- else -%}
@@ -16,42 +17,42 @@
       {%- endif -%}
     {%- endfor -%}
     <div class="col-12">
-      <button class="btn btn-secondary" type="submit">{{ page.submit_text | default: "Submit" }}</button>
+      <button class="btn btn-secondary" type="submit">
+      {{ page.submit_text | default: "Submit" }}
+        <div class="spinner-border" role="status" style="--rd-spinner-border-width:0.2rem;display:none;"></div>
+      </button>
     </div>
   </div>
 </form>
 <script>
-  window.addEventListener('DOMContentLoaded', function() {
-    if (!window.hasOwnProperty('APP')) return;
+  window.addEventListener("DOMContentLoaded", function() {
+    if (!window.hasOwnProperty("APP")) return;
     APP.validation.settings.afterValidate = function(form) {
-      if (form.classList.contains('form-callback')) {
+      if (form.classList.contains("form-callback")) {
+        form.querySelector("button .spinner-border").style.display = "inline-block";
         var formData = new FormData(form);
         var xhr = new XMLHttpRequest();
         var url = new URL("{{ action }}");
 
-        xhr.open('POST', url); 
+        xhr.open("POST", url, true);
         xhr.send(formData);
 
-        xhr.onload = function() {
-          if (xhr.status != 200) {
-            // анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
-            console.log("Error " + xhr.status + ": " + xhr.statusText); // Например, 404: Not Found
-           
-          } else { 
-            // если всё прошло гладко, выводим результат
-            form.innerHTML += '<div class="row"><div class="col-12">Thanks</div></div>';
-            form.reset();
+        xhr.onloadend = function() {
+          switch (xhr.status) {
+            case 0:
+            case 200:
+              form.innerHTML += '<div class="row"><div class="col-12"><p class="mt-4">{{ message }}</p></div></div>';
+              form.reset();
+              break;
+
+            default:
+              console.log("Error " + xhr.status + ": " + xhr.statusText); // Например, 404: Not Found
+              break;
           }
+          form.querySelector("button .spinner-border").style.display = "none";
         };
-        xhr.onprogress = function(event) {
-          if (event.lengthComputable) {
-            // console.log(`Получено ${event.loaded} из ${event.total} байт`);
-          } else {
-            // console.log(`Получено ${event.loaded} байт`); // если в ответе нет заголовка Content-Length
-          }
-        };
-        xhr.onerror = () => {
-          console.log('Submit failed');
+        xhr.onerror = function() {
+          console.log("Submit has errors");
         };
         return false;
       }
