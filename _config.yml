@@ -20,6 +20,7 @@
 
 title: JDM auto repair
 logo: /assets/img/logo.svg
+favicon: /assets/img/favicon
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here.
