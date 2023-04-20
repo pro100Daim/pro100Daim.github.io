@@ -9,6 +9,6 @@ sources
 .idea
 
 # dev deps
-.zip
-.tar[.gz]
-.rar
+*.zip
+*.tar[.gz]
+*.rar
