@@ -4,14 +4,14 @@
 
 layout: home
 h1: KEEPING YOU ON THE ROAD <br>WITH SERVICE YOU CAN TRUST
-more_text: Show more
-submit_text: Submit
+more_text: Детальніше про нас
+submit_text: Надіслати
 background: /assets/img/road.jpg
 contacts:
     # https://fontawesome.com/v5/search - search icons
   - icon: fas fa-phone-alt
     url: "#"
-    title: CALL US NOW 222-222-222
+    title: Зв'яжіться з нами вже зараз +38 063 777 86 86
     caption: Feel free to call us
   - icon: fas fa-calendar-alt
     url: "#"

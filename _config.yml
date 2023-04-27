@@ -18,28 +18,28 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: JDM auto repair
+title: JDM Auto Repair Service
 logo: /assets/img/logo.svg
 favicon: /assets/img/favicon
-email: your-email@example.com
+email: jdm.repair.service@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pro100daim.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: uk
 extra_header_nav: 
-  - title: Home
+  - title: На початок
     url: "#sec-1"
-  - title: Services
+  - title: Послуги
     url: "#sec-2"
-  - title: Contacts
+  - title: Контакти
     url: "#sec-5" 
 socials:
 # Icon search https://fontawesome.com/v5/search
   - icon: "fab fa-facebook-f"
     link: https://www.facebook.com/
   - icon: "fab fa-instagram"
-    link: https://www.instagram.com/
+    link: https://www.instagram.com/jdm_autorepair
 
 # Build settings
 theme: 
