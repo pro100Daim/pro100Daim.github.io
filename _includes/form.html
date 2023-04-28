@@ -6,12 +6,16 @@
     {%- for field in fields -%}
       {%- if field.type == "textarea" -%}
       <div class="col-12">
-        <textarea id="message" class="form-control ls-sm" rows="5" name="{{ field.entry }}" placeholder="{{ field.label }}"></textarea>
+        <textarea id="message" class="form-control ls-sm" rows="5" name="{{ field.entry }}" placeholder="{{ field.label }}" data-validate="maxlength_300"></textarea>
         <small class="error-message text-secondary"></small>
       </div>
       {%- else -%}
       <div class="col-6">
-        <input class="form-control ls-sm" type="{{ field.type }}" name="{{ field.entry }}" placeholder="{{ field.label }}" data-validate="require {{ field.type }}">
+        <input class="form-control ls-sm" 
+        type="{{ field.type }}" 
+        name="{{ field.entry }}" 
+        placeholder="{{ field.label }}" 
+        data-validate="require minlength_2 maxlength_30 {{ field.type }}">
         <small class="error-message text-secondary"></small>
       </div>
       {%- endif -%}
