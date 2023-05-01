@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-h1: KEEPING YOU ON THE ROAD <br>WITH SERVICE YOU CAN TRUST
+h1: ДБАЄМО ПРО ВАС ТА ВАШЕ АВТО
 more_text: Детальніше про нас
 submit_text: Надіслати
 background: /assets/img/road.jpg
@@ -11,64 +11,70 @@ contacts:
     # https://fontawesome.com/v5/search - search icons
   - icon: fas fa-phone-alt
     url: "#"
-    title: Зв'яжіться з нами вже зараз +38 063 777 86 86
-    caption: Feel free to call us
+    title: ЗВ'ЯЗАТИСЯ З НАМИ 
+    caption: +38 063 777 86 86
   - icon: fas fa-calendar-alt
     url: "#"
-    title: GET FREE APPOITMET
-    caption: Free Diagnosis & Brake Checks
+    title: ЗАРЕЗЕРВУВАТИ ВІЗИТ
+    caption: Дігностика ходової в подарунок при заміні мастила
   - icon: fas fa-map-marker-alt
     url: "#"
-    title: FIND US ON MAP
-    caption: New York, 1286 Ruumu Nanor
+    title: ЗНАЙТИ НАС НА МАПІ
+    caption: Одеса, с. Лиманка вул. Овідіопольська 1/21
 section_1: 
-  title: Our services
-  view_text: View all
+  title: Наші послуги
+  view_text: Показати все
   services:
     - image: /assets/img/service-1.jpg
-      title: DIAGNOSTIC
+      title: КОМПЬЮТЕРНА ДІАГНОСТИКА
       caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
     - image: /assets/img/service-2.jpg
-      title: TIRES & WHEELS
+      title: РЕМОНТ ГАЛЬМІВНОЇ ТА ХОДОВОЇ СИСТЕМИ
       caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
     - image: /assets/img/service-3.jpg
-      title: ENGINES
+      title: РЕМОНТ ТА ОБСЛУГОВУВАННЯ ДВИГУНА
+      caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+    - image: /assets/img/service-3.jpg
+      title: РЕМОНТ ТА ОБСЛУГОВУВАННЯ МКПП та АКПП 
+      caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+    - image: /assets/img/service-3.jpg
+      title: ВИГОТОВЛЕННЯ ТА РЕМОНТ ВИХЛОПНИХ СИСТЕМ
       caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
 section_2:
-  title: WE UNDERSTAND HOW IMPORTANT IT IS TO FIND THE RIGHT AUTO SERVICE
+  title: МИ РОЗУМІЄМО, ЯК ВАЖЛИВО ЗНАЙТИ ЧЕСНИЙ ТА ЯКІСНИЙ АВТО СЕРВІС
   description: >-
     Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won’t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.
   more_text: More about us
   url: "#"
   image: /assets/img/diagnostic.jpg
 section_3:
-  title: FAST & EASY
-  subtitle: Our work process 
+  title: ШВИДКО, ПРОСТО, ДОСТУПНО
+  subtitle: Від вас треба
   steps:
-    - title: Request your quote
-      caption: We will be there when you most need us
-    - title: Bring your vehicle
-      caption: We are car guys at heart
-    - title: Get it repaired
-      caption: High quality, low cost car servicing
+    - title: Записатися на діагностику
+      caption: Будемо раді вас бачити в найзручніший для вас час
+    - title: Доставити ваш транспорт в сервіс
+      caption: Ваш транспорт у надійних руках
+    - title: Отримати відремонтоване авто
+      caption: Найкраще співвідношення ціни і якості
 section_4: 
-  title: Contact us
-  thank_text: Thanks for your request
+  title: Зв'язатися з нами
+  thank_text: Дякую! Ваш запит прийнято!
   action: https://docs.google.com/forms/d/e/1FAIpQLSdsKh7FmXcm47WIm67JGU6yq3ID_XJgLamN4HNWoqJ6m07trw/formResponse
   form: 
-    - label: Name
+    - label: Ім'я
       type: text
       entry: entry.2005620554
-    - label: Lastname
+    - label: Прізвище
       type: text
       entry: entry.1045781291
     - label: E-mail
       type: email
       entry: entry.1065046570
-    - label: Phone
+    - label: Номер телефону
       type: tel
       entry: entry.1166974658
-    - label: Message
+    - label: Додаткова інформація
       type: textarea
       entry: entry.839337160
 
