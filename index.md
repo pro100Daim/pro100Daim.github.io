@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-h1: ДБАЄМО ПРО ВАС ТА ВАШЕ АВТО
+h1: МИ ПОДБАЄМО ПРО ВАС ТА ВАШЕ АВТО
 more_text: Детальніше про нас
 submit_text: Надіслати
 background: /assets/img/road.jpg
@@ -15,11 +15,11 @@ contacts:
     caption: +38 063 777 86 86
   - icon: fas fa-calendar-alt
     url: "#"
-    title: ЗАРЕЗЕРВУВАТИ ВІЗИТ
+    title: ОНЛАЙН ЗАПИС
     caption: Дігностика ходової в подарунок при заміні мастила
   - icon: fas fa-map-marker-alt
     url: "#"
-    title: ЗНАЙТИ НАС НА МАПІ
+    title: НАША АДРЕСА
     caption: Одеса, с. Лиманка вул. Овідіопольська 1/21
 section_1: 
   title: Наші послуги
@@ -41,22 +41,26 @@ section_1:
       title: ВИГОТОВЛЕННЯ ТА РЕМОНТ ВИХЛОПНИХ СИСТЕМ
       caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
 section_2:
-  title: МИ РОЗУМІЄМО, ЯК ВАЖЛИВО ЗНАЙТИ ЧЕСНИЙ ТА ЯКІСНИЙ АВТО СЕРВІС
+  title: МИ РОЗУМІЄМО, ЯК ВАЖЛИВО ЗНАЙТИ НАДІЙНИЙ ТА ЯКІСНИЙ АВТО СЕРВІС
   description: >-
     Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won’t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.
   more_text: More about us
   url: "#"
   image: /assets/img/diagnostic.jpg
 section_3:
-  title: ШВИДКО, ПРОСТО, ДОСТУПНО
-  subtitle: Від вас треба
+  title: ШВИДКО І НАДІЙНО
+  subtitle: Як усе відбувається?
   steps:
-    - title: Записатися на діагностику
-      caption: Будемо раді вас бачити в найзручніший для вас час
-    - title: Доставити ваш транспорт в сервіс
-      caption: Ваш транспорт у надійних руках
-    - title: Отримати відремонтоване авто
-      caption: Найкраще співвідношення ціни і якості
+    - title: Запис
+      caption: Визначаємо дату та час візиту
+    - title: Діагностика
+      caption: Дослідження стану автомобіля
+    - title: Затвердження
+      caption: Визначення об'єму робіт та термінів виконання
+    - title: Авто в роботі
+      caption: Закупка запчастин, виконання робіт
+    - title: Завершення ремонту
+      caption: Повернення авто клієнту, звіт про виконані роботи
 section_4: 
   title: Зв'язатися з нами
   thank_text: Дякую! Ваш запит прийнято!
