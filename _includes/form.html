@@ -30,6 +30,11 @@
 </form>
 <script>
   window.addEventListener("DOMContentLoaded", function() {
+    var mask = '{38}(000)000-00-00';
+    var phoneMask = IMask(
+    document.querySelector('input[type="tel"]'), {
+     mask: mask
+    });
     if (!window.hasOwnProperty("APP")) return;
     APP.validation.settings.afterValidate = function(form) {
       if (form.classList.contains("form-callback")) {

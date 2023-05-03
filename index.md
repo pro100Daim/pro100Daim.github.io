@@ -95,7 +95,7 @@ section_4:
         <a href="#sec-2" class="btn btn-secondary text-white">{{ page.more_text | escape }}</a>
       </div>
       <div class="col-12 mt-5 mt-lg-auto">
-        <div class="cta row row-cols-1 row-cols-lg-3 mb-n5 mb-lg-0">
+        <div class="cta row row-cols-1 row-cols-lg-3 mb-n5 mb-lg-0 gy-4">
 
           {%- for contact in page.contacts -%}
           <div class="col"> 
@@ -182,7 +182,7 @@ section_4:
         <h3 class="ls-sm">{{ page.section_3.subtitle | default: "This is H3" }}</h3>
       </div>
       <div class="col-12 mt-5">
-        <div class="row row-cols-1 row-cols-lg-3">
+        <div class="row row-cols-1 row-cols-lg-3 gy-4">
 
           {%- for step in page.section_3.steps -%}
           <div class="col"> 
