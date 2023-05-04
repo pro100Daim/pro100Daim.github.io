@@ -27,7 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pro100daim.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: uk
-google_analytics: UA-00000000-2
+google_analytics: GTM-5RKNZC9
 extra_header_nav: 
   - title: На головну
     url: "#sec-1"
