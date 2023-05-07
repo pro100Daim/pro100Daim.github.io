@@ -5,12 +5,12 @@
 }
 
 .h1, h1, .fs-1 {
-  @include fluid($vw-576, $vw-1200, $h3-font-size, $h1-font-size, $priority: true);
+  @include fluid($vw-576, $vw-1200, $h4-font-size, $h1-font-size, $priority: true);
   @include fluid($vw-1920, $vw-2560, $h1-font-size, $h1-font-size * 1.4);
 }
 
 .h2, h2, .fs-2 {
-  @include fluid($vw-576, $vw-1200, $h3-font-size, $h2-font-size, $priority: true);
+  @include fluid($vw-576, $vw-1200, $h4-font-size, $h2-font-size, $priority: true);
   @include fluid($vw-1920, $vw-2560, $h2-font-size, $h2-font-size * 1.4);
 }
 

@@ -235,7 +235,7 @@ $rfs-rem-value: strip-unit($base-value) !default;
 
 // Safari iframe resize bug: https://github.com/twbs/rfs/issues/14
 $rfs-safari-iframe-resize-bug-fix: false !default;
-$font-family-sans-serif: "Poppins", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial,
+$font-family-sans-serif: "Manrope", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial,
   "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-serif: "Forum", -apple-system, blinkmacsystemfont, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !default;
@@ -266,7 +266,7 @@ $headings-font-weight: $font-weight-bold !default;
 $headings-color: $primary !default;
 $headings-line-height: $line-height-base !default;
 $display-font-sizes: (
-  1: 14.8rem,
+  1: 10rem,
   2: 9rem,
   3: 8rem,
   4: 7rem,
@@ -275,7 +275,7 @@ $display-font-sizes: (
 ) !default;
 $display-font-family: null !default;
 $display-font-style: null !default;
-$display-font-weight: 900 !default;
+$display-font-weight: 800 !default;
 $display-line-height: $headings-line-height !default;
 $mark-padding: 0.125em !default;
 $mark-bg: $orange !default;

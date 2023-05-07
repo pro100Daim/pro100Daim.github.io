@@ -3,26 +3,26 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-h1: JDM Auto Repair - маленький куточок Японії в українській Одесі. Ми спеціалізуємось на ремонті тих машин - які не ламаються
-more_text: Детальніше про нас
+h1: JDM Auto Repair - маленький куточок Японії в українській Одесі
+more_text: Детальніше про послуги
 submit_text: Надіслати
-background: /assets/img/road.jpg
+background: /assets/img/road-1.jpg
 contacts:
     # https://fontawesome.com/v5/search - search icons
   - icon: fas fa-phone-alt
-    url: "#"
+    url: "tel:+38 063 777 86 86"
     title: ЗВ'ЯЗАТИСЯ З НАМИ 
     caption: +38 063 777 86 86
   - icon: fas fa-calendar-alt
-    url: "#"
+    url: "#sec-5"
     title: ОНЛАЙН ЗАПИС
     caption: Дігностика ходової в подарунок при заміні мастила
   - icon: fas fa-map-marker-alt
-    url: "#"
+    url: "https://goo.gl/maps/HmiyRqeEnM71hVcdA"
     title: НАША АДРЕСА
     caption: Одеса, с. Лиманка вул. Овідіопольська 1/21
 section_1: 
-  title: Наші послуги
+  title: Оберіть послугу
   view_text: Показати все
   services:
     - image: /assets/img/service-1.jpg
@@ -31,39 +31,41 @@ section_1:
     - image: /assets/img/service-2.jpg
       title: Технічне осблуговування
       caption: Регламентне, планове, сезонне технічне осблуговування
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-4.jpg
       title: Двигун
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-5.jpg
       title: Трансміссія
       caption: Обслуговування, діагностика та ремонт будь якої складності
     - image: /assets/img/service-3.jpg
       title: Ходова частина
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-6.jpg
       title: Гальмівна система
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-7.jpg
       title: Паливна система
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-8.jpg
       title: Система впуску
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-9.jpg
       title: Систама опалення та кондиціонер
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-10.jpg
       title: Вихлопна система
       caption: Обслуговування, діагностика та ремонт будь якої складності. Видалення екології. Прошивка під Євро-2.
 section_2:
-  title: МИ РОЗУМІЄМО, ЯК ВАЖЛИВО ЗНАЙТИ НАДІЙНИЙ ТА ЯКІСНИЙ АВТО СЕРВІС
+  title: МИ РОЗУМІЄМО, ЯК ВАЖЛИВО ЗНАЙТИ НАДІЙНИЙ ТА ЯКІСНИЙ АВТОСЕРВІС
   description: >-
-    З самого дитинства засновники нашого автосервісу захоплюється японськими автомобілям, але якісного сервісу за роки так й не вдалось знайти. Тому ми вирішили створити власний сервіс, екосистема якого будується як одна родина, томи ми впевнено можемо сказати, що кожен з клієнтів - член нашої великої сім'ї.
-  url: "#"
+    З самого дитинства засновники нашого автосервісу захоплюється японськими автомобілям, але якісного сервісу за роки так й не вдалось знайти. Тому ми вирішили створити власний сервіс, екосистема якого будується як одна родина, тому ми впевнено можемо сказати, що кожен з клієнтів - член нашої великої сім'ї.
+  url: "#sec-2"
   image: /assets/img/diagnostic.jpg
 section_3:
   title: ЯКІСНИЙ РЕМОНТ ДЛЯ НАДІЙНИХ АВТОМОБІЛІВ
   subtitle: Як усе відбувається?
+  price_text: Розрахувати вартість
+  url: "#sec-5"
   steps:
     - title: Запис
       caption: Визначаємо дату та час візиту
@@ -75,10 +77,13 @@ section_3:
       caption: Закупка запчастин, виконання робіт
     - title: Завершення ремонту
       caption: Повернення авто клієнту, звіт про виконані роботи
+    - title: Ваш відгук
+      caption: Поділіться враженнями у наших соц. мережах
 section_4: 
   title: Зв'язатися з нами
   thank_text: Дякую! Ваш запит прийнято!
   action: https://docs.google.com/forms/d/e/1FAIpQLSdsKh7FmXcm47WIm67JGU6yq3ID_XJgLamN4HNWoqJ6m07trw/formResponse
+  background: /assets/img/japan.jpg
   form: 
     - label: Ім'я
       type: text
@@ -104,8 +109,8 @@ section_4:
   </figure>
   <div class="position-relative container h-100">
     <div class="row h-100">
-      <div class="col-12 my-auto">
-        <h1 class="text-white mb-5">{{ page.h1 | default: "This is H1" | upcase  }}</h1>
+      <div class="col-12 my-auto text-center text-md-start">
+        <h1 class="text-white my-5">{{ page.h1 | default: "This is H1" | upcase  }}</h1>
         <a href="#sec-2" class="btn btn-secondary text-white">{{ page.more_text | escape }}</a>
       </div>
       <div class="col-12 mt-5 mt-lg-auto">
@@ -127,42 +132,42 @@ section_4:
   </div>
 </section>
 
-<section id="sec-2" class="page-section py-6">
+<section id="sec-2" class="page-section py-6 py-lg-7">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="h3 ls-sm">{{ page.section_1.title | default: "This is H2" | upcase }}</h2>
-        {%- if page.section_1.services.size > 3 -%}
+        <h2 class="h3 ls-sm mb-5">{{ page.section_1.title | default: "This is H2" | upcase }}</h2>
+        {%- comment -%} {%- if page.section_1.services.size > 3 -%}
         <a href="#services" class="ls-sm" data-expand="#services-hidden">
           <u>{{ page.section_1.view_text | default: "View all" | upcase }}</u>
           ({{ page.section_1.services.size }})
         </a>
-        {%- endif -%}
+        {%- endif -%} {%- endcomment -%}
       </div>
     </div>
-    <div id="services" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-6">
+    <div id="services" class="row row-cols-2 row-cols-lg-4 gy-4">
 
       {%- for service in page.section_1.services -%}
-      {%- if forloop.index == 4 -%}
+      {%- comment -%} {%- if forloop.index == 4 -%}
         <div id="services-hidden" class="col-12 w-100" aria-expanded="false">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">          
-      {%- endif -%}
+      {%- endif -%} {%- endcomment -%}
       <div class="col">
-        <a href="#sec-5" class="card overflow-hidden" data-message="{{ service.title | escape }}">
-          <figure class="position-relative img-fit ratio ratio-3x4 mb-4">
+        <a href="#sec-5" class="card overflow-hidden" data-message="{{ service.title | escape }}" title="{{ service.caption | escape }}">
+          <figure class="position-relative img-fit ratio ratio-4x3 mb-0">
             <img src="{{ service.image | relative_url }}" alt="Service">
-            <figcaption class="h5 text-white ls-lg p-4 m-0">
-             {{ service.caption }}
+            <figcaption class="h5 text-white ls-lg p-3 p-sm-4 m-0">
+             {{ service.title }}
             </figcaption>
             <b class="card-plus d-flex top-50 start-50 translate-middle text-white bg-secondary rounded-circle">+</b>
           </figure>
-          <h3 class="h4 ls-lg">{{ service.title | upcase }}</h3>
+          {%- comment -%} <h3 class="h4 ls-lg">{{ service.title | upcase }}</h3> {%- endcomment -%}
         </a>
       </div>     
-      {%- if forloop.index == forloop.length and forloop.index > 3 -%}
+      {%- comment -%} {%- if forloop.index == forloop.length and forloop.index > 3 -%}
           </div>
         </div>
-      {%- endif -%}
+      {%- endif -%} {%- endcomment -%}
       {%- endfor -%}
 
     </div>
@@ -177,7 +182,7 @@ section_4:
          {{ page.section_2.title | default: "This is H2" | upcase }}
         </h2>
         <p class="text-gray ls-lg mb-5">{{ page.section_2.description }}</p>
-        <p><a href="{{ page.section_2.url | default: '#' }}" class="text-white"><u>{{ page.section_2.more_text | default: "More about us" | upcase }}</u></a></p>
+        <p><a href="{{ page.section_2.url | default: '#' }}" class="text-white"><u>{{ page.more_text | default: "More about us" | upcase }}</u></a></p>
       </div>
       <div class="hstack col-12 col-lg-6 offset-xl-1">
         <figure class="position-relative img-fit ratio ratio-4x3 ms-xl-7 mb-0 mt-5 mt-xl-0">
@@ -192,7 +197,7 @@ section_4:
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="display-1">{{ page.section_3.title | default: "This is H2" | upcase }}</h2>
+        <h2 class="display-3">{{ page.section_3.title | default: "This is H2" | upcase }}</h2>
         <h3 class="ls-sm">{{ page.section_3.subtitle | default: "This is H3" }}</h3>
       </div>
       <div class="col-12 mt-5">
@@ -208,13 +213,23 @@ section_4:
           {%- endfor -%}
 
         </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="{{ page.section_3.url | default: '#' }}" class="btn btn-secondary text-white mt-6">
+              {{ page.section_3.price_text | escape }}
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <section id="sec-5" class="page-section bg-dark py-5 py-xl-7">
-  <div class="container">
+  <figure class="position-absolute top-0 start-0 w-100 h-100 img-fit">
+    <img class="opacity-10" src="{{ page.section_4.background | relative_url }}" alt="{{ site.title | escape }}">
+  </figure>
+  <div class="position-relative container">
     <div class="row">
       <div class="col-12 col-lg-6 col-xl-5">
         <h2 class="h3 text-white ls-sm mb-5">

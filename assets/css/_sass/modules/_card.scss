@@ -24,9 +24,9 @@
       background-color: rgba($black, 0.5);
       @include transition(0.3s $ease-out-cubic);
 
-      @include media-breakpoint-up(lg) {
-        background-color: rgba($black, 0);
-      }
+      // @include media-breakpoint-up(lg) {
+      //   background-color: rgba($black, 0);
+      // }
     }
 
     figcaption {
@@ -40,12 +40,12 @@
       @include transition(0.3s $ease-out-cubic);      
       z-index: 1;
       
-      @include media-breakpoint-up(lg) {
-        transform: translateY(2rem);
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-      }
+      // @include media-breakpoint-up(lg) {
+      //   transform: translateY(2rem);
+      //   visibility: hidden;
+      //   opacity: 0;
+      //   pointer-events: none;
+      // }
     }
   }
 
@@ -62,7 +62,7 @@
       }
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       .card-plus {
         width: 10rem;
         height: 10rem;
