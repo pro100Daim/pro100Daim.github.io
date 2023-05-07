@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-h1: JDM Auto Repair - маленький куточок Японії в українській Одесі. Ми спеціалізуємось на ремонті тих машин - які не ламаються
+h1: JDM Auto Repair - маленький куточок Японії в українській Одесі. Ми спеціалізуємось на машинах - які майже не ламаються.
 more_text: Детальніше про нас
 submit_text: Надіслати
 background: /assets/img/road.jpg
