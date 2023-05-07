@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-h1: МИ ПОДБАЄМО ПРО ВАС ТА ВАШЕ АВТО
+h1: JDM Auto Repair - маленький куточок Японії в українській Одесі. Ми спеціалізуємось на ремонті тих машин - які не ламаються
 more_text: Детальніше про нас
 submit_text: Надіслати
 background: /assets/img/road.jpg
@@ -26,29 +26,43 @@ section_1:
   view_text: Показати все
   services:
     - image: /assets/img/service-1.jpg
-      title: КОМПЬЮТЕРНА ДІАГНОСТИКА
-      caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+      title: Діагностика
+      caption: Професійна комп'ютерна діагностика
     - image: /assets/img/service-2.jpg
-      title: РЕМОНТ ГАЛЬМІВНОЇ ТА ХОДОВОЇ СИСТЕМИ
-      caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+      title: Технічне осблуговування
+      caption: Регламентне, планове, сезонне технічне осблуговування
     - image: /assets/img/service-3.jpg
-      title: РЕМОНТ ТА ОБСЛУГОВУВАННЯ ДВИГУНА
-      caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+      title: Двигун
+      caption: Обслуговування, діагностика та ремонт будь якої складності
     - image: /assets/img/service-3.jpg
-      title: РЕМОНТ ТА ОБСЛУГОВУВАННЯ МКПП та АКПП 
-      caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+      title: Трансміссія
+      caption: Обслуговування, діагностика та ремонт будь якої складності
     - image: /assets/img/service-3.jpg
-      title: ВИГОТОВЛЕННЯ ТА РЕМОНТ ВИХЛОПНИХ СИСТЕМ
-      caption: ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH
+      title: Ходова частина
+      caption: Обслуговування, діагностика та ремонт будь якої складності
+    - image: /assets/img/service-3.jpg
+      title: Гальмівна система
+      caption: Обслуговування, діагностика та ремонт будь якої складності
+    - image: /assets/img/service-3.jpg
+      title: Паливна система
+      caption: Обслуговування, діагностика та ремонт будь якої складності
+    - image: /assets/img/service-3.jpg
+      title: Система впуску
+      caption: Обслуговування, діагностика та ремонт будь якої складності
+    - image: /assets/img/service-3.jpg
+      title: Вихлопна система
+      caption: Обслуговування, діагностика та ремонт будь якої складності
+    - image: /assets/img/service-3.jpg
+      title: Вихлопна система
+      caption: Обслуговування, діагностика та ремонт будь якої складності. Видалення екології. Прошивка під Євро-2.
 section_2:
   title: МИ РОЗУМІЄМО, ЯК ВАЖЛИВО ЗНАЙТИ НАДІЙНИЙ ТА ЯКІСНИЙ АВТО СЕРВІС
   description: >-
-    Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won’t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.
-  more_text: More about us
+    З самого дитинства засновники нашого автосервісу захоплюється японськими автомобілям, але якісного сервісу за роки так й не вдалось знайти. Тому ми вирішили створити власний сервіс, екосистема якого будується як одна родина, томи ми впевнено можемо сказати, що кожен з клієнтів - член нашої великої сім'ї.
   url: "#"
   image: /assets/img/diagnostic.jpg
 section_3:
-  title: ШВИДКО І НАДІЙНО
+  title: ЯКІСНИЙ РЕМОНТ ДЛЯ НАДІЙНИХ АВТОМОБІЛІВ
   subtitle: Як усе відбувається?
   steps:
     - title: Запис
