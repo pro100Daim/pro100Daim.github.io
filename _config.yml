@@ -23,7 +23,7 @@ logo: /assets/img/logo.svg
 favicon: /assets/img/favicon
 email: jdm.repair.service@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  JDM AUTO REPAIR - маленький куточок японії в українській Одесі
+  JDM AUTO REPAIR - маленький куточок Японії в українській Одесі
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pro100daim.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: uk
