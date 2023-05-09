@@ -7,7 +7,7 @@ image: /assets/img/logo@2x.png
 h1: JDM Auto Repair - маленький куточок Японії в українській Одесі
 more_text: Детальніше про послуги
 submit_text: Надіслати
-background: /assets/img/road-1.jpg
+background: /assets/img/brand.jpg
 contacts:
     # https://fontawesome.com/v5/search - search icons
   - icon: fas fa-phone-alt
