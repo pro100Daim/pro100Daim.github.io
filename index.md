@@ -11,7 +11,7 @@ background: /assets/img/road-1.jpg
 contacts:
     # https://fontawesome.com/v5/search - search icons
   - icon: fas fa-phone-alt
-    url: "tel:+38 063 777 86 86"
+    url: "tel:+380637778686"
     title: ЗВ'ЯЗАТИСЯ З НАМИ 
     caption: +38 063 777 86 86
   - icon: fas fa-calendar-alt

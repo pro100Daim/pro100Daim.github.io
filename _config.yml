@@ -45,10 +45,10 @@ socials:
   - icon: "fab fa-instagram"
     link: "#"
 messengers:
+  - icon: "fas fa-phone"
+    link: tel:+380637778686
   - icon: "fab fa-telegram"
     link: https://t.me/
-  - icon: "fab fa-whatsapp"
-    link: https://wa.me/
   - icon: "fab fa-viber"
     link: viber://chat/?number=
 # Build settings
