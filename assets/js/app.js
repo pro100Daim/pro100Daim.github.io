@@ -31,6 +31,12 @@
       else _self.options.header.classList.remove("is-scroll");
     }
 
+    function toggler(ev) {
+      if (ev.currentTarget && ev.currentTarget.closest("[data-toggler]")) {
+        ev.currentTarget.closest("[data-toggler]").classList.toggle("is-open");
+      }
+    }
+
     function showMenu(close = false) {
       if (close || _self.options.header.querySelector(".burger-container").classList.contains("is-animate")) {
         _self.options.header.classList.remove("is-open");
@@ -81,6 +87,9 @@
       })
       document.querySelectorAll("[data-message]").forEach(function(el) {
         el.addEventListener('click', setMessage);
+      })
+      document.querySelectorAll(".js-toggle").forEach(function(el) {
+        el.addEventListener('click', toggler);
       })
       document.querySelector('#nav-toggle')
       .addEventListener('click', function() {

@@ -1,0 +1,16 @@
+{%- if site.messengers and site.messengers.size != 0 -%}
+<!-- Messengers :: start -->
+<aside class="messengers bg-secondary" data-toggler>
+  {%- comment -%} <button class="messengers-opener btn btn-secondary js-toggle" type="button">
+    <i class="fas fa-mail-bulk fa-2x"></i>
+  </button> {%- endcomment -%}
+  <ul class="row flex-column g-2 g-md-3 p-2 p-md-3 mx-0 mb-0">
+    {%- for messenger in site.messengers -%}
+    <li><a class="d-inline-block text-white" href="{{ messenger.link | default: '#' }}" target="_blank">
+      <i class="{{ messenger.icon | escape }} fa-fw fa-2x"></i>
+    </a></li>
+    {%- endfor -%}
+  </ul>
+</aside>
+<!-- Messengers :: end -->
+{%- endif -%}

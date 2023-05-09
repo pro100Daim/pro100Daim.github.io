@@ -103,9 +103,9 @@ section_4:
 
 ---
 
-<section id="sec-1" class="page-section hero overflow-visible mb-5 mb-md-7">
+<section id="sec-1" class="page-section hero bg-dark overflow-visible mb-5 mb-md-7">
   <figure class="position-absolute top-0 start-0 w-100 h-100 img-fit">
-    <img src="{{ page.background | relative_url }}" alt="{{ site.title | escape }}">
+    <img class="opacity-70" src="{{ page.background | relative_url }}" alt="{{ site.title | escape }}">
   </figure>
   <div class="position-relative container h-100">
     <div class="row h-100">

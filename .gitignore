@@ -12,3 +12,7 @@ sources
 *.zip
 *.tar[.gz]
 *.rar
+
+# admin
+tina/
+admin/
