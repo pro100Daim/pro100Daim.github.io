@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-image: /assets/img/logo@2x.png
+image: /assets/img/brand.jpg
 h1: JDM Auto Repair - маленький куточок Японії в українській Одесі
 more_text: Детальніше про послуги
 submit_text: Надіслати
