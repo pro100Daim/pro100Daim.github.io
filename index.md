@@ -82,7 +82,7 @@ section_3:
 section_4: 
   title: Зв'язатися з нами
   thank_text: Дякую! Ваш запит прийнято!
-  action: https://docs.google.com/forms/d/e/1FAIpQLSdsKh7FmXcm47WIm67JGU6yq3ID_XJgLamN4HNWoqJ6m07trw/formResponse
+  action: https://docs.google.com/forms/d/e/1FAIpQLSckTc0ef43LJAJKqH7YSks1Z_5oBfZ_XKb7PhpFE5CzsfUQNg/formResponse
   background: /assets/img/japan.jpg
   form: 
     - label: Ім'я
@@ -90,13 +90,13 @@ section_4:
       entry: entry.2005620554
     - label: Прізвище
       type: text
-      entry: entry.1045781291
-    - label: E-mail
-      type: email
-      entry: entry.1065046570
+      entry: entry.13247071
     - label: Номер телефону
       type: tel
       entry: entry.1166974658
+    - label: E-mail
+      type: email
+      entry: entry.1045781291
     - label: Додаткова інформація
       type: textarea
       entry: entry.839337160
