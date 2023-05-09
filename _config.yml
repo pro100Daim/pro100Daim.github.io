@@ -48,9 +48,9 @@ messengers:
   - icon: "fas fa-phone"
     link: tel:+380637778686
   - icon: "fab fa-telegram"
-    link: https://t.me/
+    link: https://t.me/jdm_autorepair
   - icon: "fab fa-viber"
-    link: viber://chat/?number=
+    link: viber://chat/?number=+380637778686
 # Build settings
 author: savvoff
 theme: 
