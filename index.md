@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+image: /assets/img/logo@2x.png
 h1: JDM Auto Repair - маленький куточок Японії в українській Одесі
 more_text: Детальніше про послуги
 submit_text: Надіслати
@@ -82,7 +83,7 @@ section_3:
 section_4: 
   title: Зв'язатися з нами
   thank_text: Дякую! Ваш запит прийнято!
-  action: https://docs.google.com/forms/d/e/1FAIpQLSckTc0ef43LJAJKqH7YSks1Z_5oBfZ_XKb7PhpFE5CzsfUQNg/formResponse
+  action: https://docs.google.com/forms/d/e/1FAIpQLSdqRn6pG1uFlweXaNYKNC60LPQZIcjBIWG9eERzKxG4Vvwltw/formResponse
   background: /assets/img/japan.jpg
   form: 
     - label: Ім'я
@@ -90,7 +91,7 @@ section_4:
       entry: entry.2005620554
     - label: Прізвище
       type: text
-      entry: entry.13247071
+      entry: entry.1065046570
     - label: Номер телефону
       type: tel
       entry: entry.1166974658
