@@ -52,7 +52,7 @@ messengers:
   - icon: "fab fa-viber"
     link: viber://chat/?number=+380637778686
 # Build settings
-author: savvoff
+author: mpanasenko
 theme: 
   skin: classic
   color: "#fff"
