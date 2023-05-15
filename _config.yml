@@ -28,7 +28,7 @@ email: jdm.repair.service@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   JDM AUTO REPAIR - маленький куточок Японії в українській Одесі
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pro100daim.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jdm-autoservice.com.ua" # the base hostname & protocol for your site, e.g. http://example.com
 lang: uk
 google_analytics: GTM-5RKNZC9
 extra_header_nav: 
@@ -52,7 +52,7 @@ messengers:
   - icon: "fab fa-viber"
     link: viber://chat/?number=+380637778686
 # Build settings
-author: mpanasenko
+author: JDM Auto Repair Service
 theme: 
   skin: classic
   color: "#fff"
