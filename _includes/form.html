@@ -50,11 +50,13 @@
           switch (xhr.status) {
             case 0:
             case 200:
+              fetch(APP.botMessageLink);
               form.innerHTML += '<div class="row"><div class="col-12"><p class="mt-4">{{ message }}</p></div></div>';
               form.reset();
               break;
 
             default:
+              alert("Oops! Seems like an Error with submission!");
               console.log("Error " + xhr.status + ": " + xhr.statusText); // Например, 404: Not Found
               break;
           }

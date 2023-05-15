@@ -4,9 +4,15 @@
     if (!new.target) {
       return new App();
     }
+    var _self = this;
 
     this.options = {
       header: document.querySelector(".page-header"),
+      bot: {
+        token: "6237734409:AAFFLhLBafg0PZdtbMDQC_niOV8FoWh80Zw",
+        phrase: encodeURI("АХТУНГ! КТО ТО НАСРАЛ В ТАБЛИЦУ!"),
+        chatId: "-920880062",
+      },       
       validations: {
         autoTrim: true,
         defaultBrowserValidation: false,
@@ -21,8 +27,9 @@
         }
       }
     };
+    
+    this.botMessageLink = makeLink();
 
-    var _self = this;
     init();
 
     function scrollHeader() {
@@ -35,6 +42,11 @@
       if (ev.currentTarget && ev.currentTarget.closest("[data-toggler]")) {
         ev.currentTarget.closest("[data-toggler]").classList.toggle("is-open");
       }
+    }
+
+    function makeLink() {
+      var bot = _self.options.bot;
+      return "https://api.telegram.org/bot" + bot.token + "/sendMessage?chat_id=" + bot.chatId + "&text=" + bot.phrase;
     }
 
     function showMenu(close = false) {
