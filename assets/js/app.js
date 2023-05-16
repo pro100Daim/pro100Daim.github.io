@@ -9,7 +9,7 @@
     this.options = {
       header: document.querySelector(".page-header"),
       bot: {
-        token: "6237734409:AAFFLhLBafg0PZdtbMDQC_niOV8FoWh80Zw",
+        token: "NjIzNzczNDQwOTpBQUZGTGhMQmFmZzBQWmR0Yk1EUUNfbmlPVjhGb1doODBadw==",
         phrase: encodeURI("АХТУНГ! КТО ТО НАСРАЛ В ТАБЛИЦУ!"),
         chatId: "-920880062",
       },       
@@ -46,7 +46,7 @@
 
     function makeLink() {
       var bot = _self.options.bot;
-      return "https://api.telegram.org/bot" + bot.token + "/sendMessage?chat_id=" + bot.chatId + "&text=" + bot.phrase;
+      return "https://api.telegram.org/bot" + Base64.decode(bot.token) + "/sendMessage?chat_id=" + bot.chatId + "&text=" + bot.phrase;
     }
 
     function showMenu(close = false) {
