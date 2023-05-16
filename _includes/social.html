@@ -1,5 +1,5 @@
 {%- for social in site.socials -%}
-  <a class="fs-5 ms-5" href="{{ social.link }}" target="_blank">
+  <a class="fs-5 ms-5" href="{{ social.link | escape }}" target="_blank" aria-label="{{ social.link | escape }}">
     <i class="{{ social.icon }} fa-fw fa-lg"></i>
   </a>
 {%- endfor -%}

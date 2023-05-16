@@ -6,7 +6,7 @@
   </button> {%- endcomment -%}
   <ul class="row flex-column g-2 g-md-3 p-2 p-md-3 mx-0 mb-0">
     {%- for messenger in site.messengers -%}
-    <li><a class="d-inline-block text-white" href="{{ messenger.link | default: '#' }}" target="_blank">
+    <li><a class="d-inline-block text-white" href="{{ messenger.link | default: '#' }}" target="_blank" aria-label="{{ messenger.link | escape }}">
       <i class="{{ messenger.icon | escape }} fa-fw fa-2x"></i>
     </a></li>
     {%- endfor -%}
