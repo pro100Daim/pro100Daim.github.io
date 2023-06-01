@@ -10,7 +10,7 @@
       header: document.querySelector(".page-header"),
       bot: {
         token: "NjIzNzczNDQwOTpBQUZGTGhMQmFmZzBQWmR0Yk1EUUNfbmlPVjhGb1doODBadw==",
-        phrase: encodeURI("АХТУНГ! КТО ТО НАСРАЛ В ТАБЛИЦУ!"),
+        phrase: encodeURI("АХТУНГ! КТО-ТО НАСРАЛ В ТАБЛИЦУ!"),
         chatId: "-920880062",
       },       
       validations: {
