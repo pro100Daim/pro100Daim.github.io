@@ -21,12 +21,15 @@
 # SEO tag settings
 # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 
-title: JDM Auto Repair Service
+title: СТО JDM Auto Repair 🔧 Ремонт та Обслуговування Японських Авто в Одесі
 logo: /assets/img/logo.svg
 favicon: /assets/img/favicon
 email: jdm.repair.service@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  JDM AUTO REPAIR - маленький куточок Японії в українській Одесі
+  JDM Auto Repair, СТО на яке можна покластися віддаючи на ремонт японський автомобіль в Одесі. 
+  Дзвоніть ☎️+380637778686 вже сьогодні і наші експерти забезпечать якісну діагностику та 
+  технічне обслуговування вашого японського авто. 
+  Довірте машину в руки професіоналів і насолоджуйтеся безпроблемною їздою.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jdm-autoservice.com.ua" # the base hostname & protocol for your site, e.g. http://example.com
 lang: uk
