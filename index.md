@@ -234,7 +234,7 @@ section_4:
     <div class="row h-100">
       <div class="col-12 my-auto text-center text-md-start">
         <h1 class="text-white my-5">{{ page.h1 | default: "This is H1" | upcase  }}</h1>
-        <a href="#sec-2" class="btn btn-secondary text-white">{{ page.more_text | escape }}</a>
+        <a href="{{ page.contacts[0].url }}" class="btn btn-secondary text-white">{{ page.more_text | escape }}</a>
       </div>
       <div class="col-12 mt-5 mt-lg-auto">
         <div class="cta row row-cols-1 row-cols-lg-3 mb-n5 mb-lg-0 gy-4">
