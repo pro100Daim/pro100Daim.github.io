@@ -5,7 +5,7 @@
 layout: home
 image: /assets/img/brand.jpg
 h1: СТО JDM Auto Repair - Надійний Автосервіс з ремонту японських марок авто в Одесі!
-more_text: Детальніше про послуги
+more_text: Зв'язатися з нами
 submit_text: Надіслати
 background: /assets/img/road-1.jpg
 contacts:
