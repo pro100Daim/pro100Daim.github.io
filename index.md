@@ -3,11 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-image: /assets/img/brand.jpg
+image: /assets/img/brand.webp
 h1: СТО JDM Auto Repair - Надійний Автосервіс з ремонту японських марок авто в Одесі!
 more_text: Зв'язатися з нами
 submit_text: Надіслати
-background: /assets/img/road-1.jpg
+background: /assets/img/road-1.webp
 contacts:
     # https://fontawesome.com/v5/search - search icons
   - icon: fas fa-phone-alt
@@ -26,34 +26,34 @@ section_1:
   title: Оберіть послугу
   view_text: Показати все
   services:
-    - image: /assets/img/service-1.jpg
+    - image: /assets/img/service-1.webp
       title: Діагностика
       caption: Професійна комп'ютерна діагностика
-    - image: /assets/img/service-2.jpg
+    - image: /assets/img/service-2.webp
       title: Технічне осблуговування
       caption: Регламентне, планове, сезонне технічне осблуговування
-    - image: /assets/img/service-4.jpg
+    - image: /assets/img/service-4.webp
       title: Двигун
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-5.jpg
+    - image: /assets/img/service-5.webp
       title: Трансміссія
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-3.jpg
+    - image: /assets/img/service-3.webp
       title: Ходова частина
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-6.jpg
+    - image: /assets/img/service-6.webp
       title: Гальмівна система
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-7.jpg
+    - image: /assets/img/service-7.webp
       title: Паливна система
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-8.jpg
+    - image: /assets/img/service-8.webp
       title: Система впуску
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-9.jpg
+    - image: /assets/img/service-9.webp
       title: Систама опалення та кондиціонер
       caption: Обслуговування, діагностика та ремонт будь якої складності
-    - image: /assets/img/service-10.jpg
+    - image: /assets/img/service-10.webp
       title: Вихлопна система
       caption: Обслуговування, діагностика та ремонт будь якої складності. Видалення екології. Прошивка під Євро-2.
 section_2:
@@ -183,7 +183,7 @@ section_2:
     <p class="text-gray ls-lg"><strong>Для швидкого зв'язку</strong> та отримання відповіді на ваші запитання ви також можете звернутися до нас через <a  class="text-white" href="https://t.me/jdm_autorepair" target="_new">Telegram</a>. Ми завжди відкриті до спілкування та готові допомогти вам.</p>
     <p class="text-gray ls-lg">Не витрачайте час на пошук надійного СТО на Таїрово в Одесі. Зв'яжіться з JDM Auto Repair сьогодні та довірте свій японський автомобіль професіоналам. Запишіться на обслуговування вже зараз і не відкладайте покращення стану вашого авто!</p>
   url: "#sec-2"
-  image: /assets/img/diagnostic.jpg
+  image: /assets/img/diagnostic.webp
 section_3:
   title: ЯКІСНИЙ РЕМОНТ ДЛЯ НАДІЙНИХ АВТОМОБІЛІВ
   subtitle: Як усе відбувається?
@@ -206,7 +206,7 @@ section_4:
   title: Зв'язатися з нами
   thank_text: Дякую! Ваш запит прийнято!
   action: https://docs.google.com/forms/d/e/1FAIpQLSdqRn6pG1uFlweXaNYKNC60LPQZIcjBIWG9eERzKxG4Vvwltw/formResponse
-  background: /assets/img/japan.jpg
+  background: /assets/img/japan.webp
   form: 
     - label: Ім'я
       type: text
@@ -314,7 +314,7 @@ section_4:
       </div>
       {%- if page.section_2.article != "" -%}
       <div class="col-12 mt-5">        
-        {{ page.section_2.article | default: "This is article" }}
+        {{ page.section_2.article | default: "This is an article" }}
       </div>
       {%- endif -%}
     </div>
