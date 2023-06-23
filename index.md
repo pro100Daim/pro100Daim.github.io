@@ -94,7 +94,7 @@ section_2:
     <p class="text-gray ls-lg"><em>Зауважте, що це лише базовий перелік наших послуг. Для отримання детальної інформації зверніться до нас за телефоном <a class="text-white" href="tel:+380637778686">+380637778686</a> або відвідайте наше СТО на Таїрово за адресою вул. Овідіопольська 1/21.</em></p>
     <h3 class="text-white ls-sm">Ціни СТО JDM Auto Repair</h3>
     <p class="text-gray ls-lg">Під час визначення вартості ремонту ми враховуємо якість запчастин, складність роботи, час, що необхідний на її виконання. Ось приблизний прайс-лист наших послуг:</p>
-    <table class="table table-dark">
+    <table class="table table-dark table-hover">
     <thead>
     <tr>
     <th>Послуга</th>
@@ -164,7 +164,7 @@ section_2:
     <p class="text-gray ls-lg">Ми пишаємося задоволеними клієнтами, які довіряють нам свої автомобілі. Наша команда завжди прагне надати найкращі послуги, вирішувати проблеми та забезпечувати задоволення кожного клієнта. Ми завжди відкриті до вашого фідбеку та вдячні за відгуки, що допомагають нам покращувати свою роботу.</p>
     <p class="text-gray ls-lg">Будь ласка, поділіться своїм досвідом та залиште відгук за посиланнями нижче:</p>
     <ul class="text-white ps-5">
-    <li><a class="text-white" href="https://go.2gis.com/ojrrh" target="_new" rel="nofollow">2GIS</a></li>
+    <li><a class="text-white" href="https://ul.waze.com/ul?place=EjxWdWwuIE92aWRpb3BvbMq5c8q5a2EsIE9kZXNhLCBPZGVzJ2thIG9ibGFzdCwgVWtyYWluZSwgNjUwMDAiLiosChQKEgnHqYQoX8vHQBE8slyU9qfsVxIUChIJQ0yGC4oxxkARbBfyjOKPnxI&ll=46.37345250%2C30.70106580&navigate=yes" target="_new" rel="nofollow">Waze</a></li>
     <li><a class="text-white" href="https://auto.ria.com/uk/autoservice/sto-spetsializovane-sto-dlia-iaponskykh-avto-v-odesi:-jdm-auto-repair-11705.html" target="_new" rel="nofollow">AUTO.RIA</a></li>
     <li><a class="text-white" href="https://top20.ua/od/avto-moto/avtomasterskie-servisyi/jdm-auto-repair-remont-yaponskih-avto.html" target="_new" rel="nofollow">TOP20.ua</a></li>
     </ul>
@@ -179,8 +179,8 @@ section_2:
     </ul>
     <p class="text-gray ls-lg"><strong>Плануйте свій візит</strong></p>
     <p class="text-gray ls-lg">Ми готові прийняти ваш автомобіль для надійного ремонту та обслуговування. Наші кваліфіковані механіки з радістю допоможуть вам вирішити будь-які проблеми з вашим японським автомобілем. Для зручності ми підготували карту, яка допоможе вам знайти наше СТО на Таїрово в Одесі.</p>
-    <p class="text-gray ls-lg"><strong>Карта проїзду - </strong><a class="text-white" href="https://go.2gis.com/ojrrh" target="_new">Дізнайтеся, як до нас дістатися, скориставшись картою 2Gis.</a></p>
-    <p class="text-gray ls-lg"><strong>Для швидкого зв'язку</strong> та отримання відповіді на ваші запитання ви також можете звернутися до нас через <a  class="text-white" href="https://t.me/jdm_autorepair" target="_new">Telegram</a>. Ми завжди відкриті до спілкування та готові допомогти вам.</p>
+    <p class="text-gray ls-lg"><strong>Карта проїзду - </strong><a class="text-white" href="https://ul.waze.com/ul?place=EjxWdWwuIE92aWRpb3BvbMq5c8q5a2EsIE9kZXNhLCBPZGVzJ2thIG9ibGFzdCwgVWtyYWluZSwgNjUwMDAiLiosChQKEgnHqYQoX8vHQBE8slyU9qfsVxIUChIJQ0yGC4oxxkARbBfyjOKPnxI&ll=46.37345250%2C30.70106580&navigate=yes" target="_new">Дізнайтеся, як до нас дістатися, скориставшись картою Waze.</a></p>
+    <p class="text-gray ls-lg"><strong>Для швидкого зв'язку</strong> та отримання відповіді на ваші запитання ви також можете звернутися до нас через <a class="text-white" href="https://t.me/jdm_autorepair" target="_new">Telegram</a>. Ми завжди відкриті до спілкування та готові допомогти вам.</p>
     <p class="text-gray ls-lg">Не витрачайте час на пошук надійного СТО на Таїрово в Одесі. Зв'яжіться з JDM Auto Repair сьогодні та довірте свій японський автомобіль професіоналам. Запишіться на обслуговування вже зараз і не відкладайте покращення стану вашого авто!</p>
   url: "#sec-2"
   image: /assets/img/diagnostic-min.webp
@@ -211,15 +211,9 @@ section_4:
     - label: Ім'я
       type: text
       entry: entry.2005620554
-    - label: Прізвище
-      type: text
-      entry: entry.1065046570
     - label: Номер телефону
       type: tel
       entry: entry.1166974658
-    - label: E-mail
-      type: email
-      entry: entry.1045781291
     - label: Додаткова інформація
       type: textarea
       entry: entry.839337160
