@@ -1,6 +1,11 @@
 .page-footer {
   position: relative;
-
+  &.bg-black {
+    background-color: $black;
+    * {
+      color: $white;
+    }
+  }
   &-brand {
     max-width: 13.5rem;
   }

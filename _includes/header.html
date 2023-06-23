@@ -1,5 +1,5 @@
 <!-- Header :: start -->
-<header class="page-header sticky-top py-3">
+<header class="page-header sticky-top py-3 {% if page.layout != 'home' %}bg-black{%- endif -%}">
   <div class="container-xl">
     <div class="row flex-nowrap flex-lg-wrap g-0">
       <div class="col-2">
@@ -14,22 +14,25 @@
         {%- if page_paths -%}
         <nav class="page-header__nav d-flex flex-grow-1">
           <ul class="d-flex flex-column flex-lg-row justify-content-center list-unstyled m-auto">
-            {%- for path in page_paths -%}
-              {%- assign my_page = site.pages | where: "path", path | first -%}
-              {%- if my_page.title -%}
-              <li class="page-header__nav-item">
-                <a class="d-inline-block text-uppercase" href="{{ page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              </li>
-              {%- endif -%}
-            {%- endfor -%}
+            {% if page.layout != 'home' %}
+              {%- for path in page_paths -%}
+                {%- assign my_page = site.pages | where: "path", path | first -%}
+                {%- if my_page.title -%}
+                <li class="page-header__nav-item">
+                  <a class="d-inline-block text-uppercase" href="{{ page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                </li>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- else -%}
             {%- comment -%} Custom menus {%- endcomment -%}
-            {%- for item in site.extra_header_nav -%}
-              {%- if item.title -%}
-              <li class="page-header__nav-item">
-                <a class="d-inline-block text-uppercase" href="{{ item.url }}">{{ item.title | escape }}</a>
-              </li>
-              {%- endif -%}
-            {%- endfor -%}
+              {%- for item in site.extra_header_nav -%}
+                {%- if item.title -%}
+                <li class="page-header__nav-item">
+                  <a class="d-inline-block text-uppercase" href="{{ item.url }}">{{ item.title | escape }}</a>
+                </li>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
           </ul>
         </nav>
         {%- endif -%}

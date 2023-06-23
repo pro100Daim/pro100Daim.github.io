@@ -39,6 +39,8 @@ extra_header_nav:
     url: "#sec-1"
   - title: Послуги
     url: "#sec-2"
+  - title: Про нас
+    url: "#sec-3"
   - title: Контакти
     url: "#sec-5" 
 socials:

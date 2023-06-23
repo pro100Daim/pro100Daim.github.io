@@ -72,7 +72,7 @@ section_2:
     <p class="text-gray ls-lg">Зверніться до JDM Auto Repair - вашого надійного партнера в ремонті японських автомобілів в Одесі. Ми раді будемо допомогти вам!</p>
     <h3 class="text-white ls-sm">Наша спеціалізація - Експертний Ремонт Японських Автомобілів</h3>
     <p class="text-gray ls-lg"><strong>Ми працюємо з широким спектром японських автомобілів, забезпечуючи кожному авто індивідуальний підхід.</strong></p>
-    <p class="text-gray ls-lg">JDM Auto Repair спеціалізується на обслуговуванні та ремонті японських автомобілів таких марок, як <strong>Toyota, Lexus, Nissan, Infiniti, Honda, Acura, Suzuki, Mazda, Mitsubishi та Subaru</strong>. Наша команда має великий досвід роботи з цими автомобілями, тому ви можете бути впевнені, що ваш авто буде обслуговуватися на високому рівні.</p>
+    <p class="text-gray ls-lg">JDM Auto Repair спеціалізується на обслуговуванні та ремонті японських автомобілів таких марок, як <strong><a class="text-secondary" href="/toyota">Toyota</a>, Lexus, Nissan, Infiniti, Honda, Acura, Suzuki, Mazda, Mitsubishi та Subaru</strong>. Наша команда має великий досвід роботи з цими автомобілями, тому ви можете бути впевнені, що ваш авто буде обслуговуватися на високому рівні.</p>
     <p class="text-gray ls-lg">Ми розуміємо унікальність кожного автомобіля та враховуємо особливості роботи з кожною маркою. Використовуючи найновіші технології та надійне обладнання, ми забезпечуємо високоякісне технічне обслуговування та ремонт автомобілів, які до нас звертаються.</p>
     <h3 class="text-white ls-sm">Спектр послуг JDM Auto Repair</h3>
     <p class="text-gray ls-lg"><strong>Від повсякденного технічного обслуговування до складних ремонтних робіт - наша команда готова подбати про ваш автомобіль.</strong></p>
@@ -294,29 +294,21 @@ section_4:
       {%- endfor -%}
 
     </div>
-  </div>
+  </div>  
 </section>
 
-<section id="sec-3" class="page-section bg-dark py-5 py-xl-7">
-  <div class="container">
+<section id="sec-5" class="page-section bg-dark py-5 py-xl-7">
+  <figure class="position-absolute top-0 start-0 w-100 h-100 img-fit">
+    <img class="opacity-10" src="{{ page.section_4.background | relative_url }}" alt="{{ site.title | escape }}">
+  </figure>
+  <div class="position-relative container">
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 col-xl-5">
         <h2 class="h3 text-white ls-sm mb-5">
-         {{ page.section_2.title | default: "This is H2" | upcase }}
+         {{ page.section_4.title | default: "This is H2" | upcase }}
         </h2>
-        <p class="text-gray ls-lg mb-5">{{ page.section_2.description }}</p>
-        <p><a href="{{ page.section_2.url | default: '#' }}" class="text-white"><u>{{ page.more_text | default: "More about us" | upcase }}</u></a></p>
+        {%- include form.html fields = page.section_4.form action=page.section_4.action message=page.section_4.thank_text -%}
       </div>
-      <div class="hstack col-12 col-lg-6">
-        <figure class="position-relative img-fit ratio ratio-4x3 ms-xl-7 mb-0 mt-5 mt-xl-0">
-          <img src="{{ page.section_2.image | relative_url }}" alt="{{ site.title | escape }}">
-        </figure>
-      </div>
-      {%- if page.section_2.article != "" -%}
-      <div class="col-12 mt-5">        
-        {{ page.section_2.article | default: "This is an article" }}
-      </div>
-      {%- endif -%}
     </div>
   </div>
 </section>
@@ -353,18 +345,27 @@ section_4:
   </div>
 </section>
 
-<section id="sec-5" class="page-section bg-dark py-5 py-xl-7">
-  <figure class="position-absolute top-0 start-0 w-100 h-100 img-fit">
-    <img class="opacity-10" src="{{ page.section_4.background | relative_url }}" alt="{{ site.title | escape }}">
-  </figure>
-  <div class="position-relative container">
+
+<section id="sec-3" class="page-section bg-dark py-5 py-xl-7">
+  <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6 col-xl-5">
+      <div class="col-12 col-lg-6">
         <h2 class="h3 text-white ls-sm mb-5">
-         {{ page.section_4.title | default: "This is H2" | upcase }}
+         {{ page.section_2.title | default: "This is H2" | upcase }}
         </h2>
-        {%- include form.html fields = page.section_4.form action=page.section_4.action message=page.section_4.thank_text -%}
+        <p class="text-gray ls-lg mb-5">{{ page.section_2.description }}</p>
+        <p><a href="{{ page.section_2.url | default: '#' }}" class="text-white"><u>{{ page.more_text | default: "More about us" | upcase }}</u></a></p>
       </div>
+      <div class="hstack col-12 col-lg-6">
+        <figure class="position-relative img-fit ratio ratio-4x3 ms-xl-7 mb-0 mt-5 mt-xl-0">
+          <img src="{{ page.section_2.image | relative_url }}" alt="{{ site.title | escape }}">
+        </figure>
+      </div>
+      {%- if page.section_2.article != "" -%}
+      <div class="col-12 mt-5">        
+        {{ page.section_2.article | default: "This is an article" }}
+      </div>
+      {%- endif -%}
     </div>
   </div>
 </section>
